@@ -11,7 +11,7 @@
     "url": "git+https://github.com/aleksei24/webpack.git"
   },
   "keywords": [
-    "webpack"
+    "webpack", "js", "javascript"
   ],
   "author": "Alexey",
   "license": "ISC",
