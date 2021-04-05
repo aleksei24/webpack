@@ -1,5 +1,5 @@
 {
-  "name": "webpack",
+  "name": "my_own_webpack",
   "version": "1.0.0",
   "description": "attempt to build my own webpack template",
   "main": "index.js",
@@ -11,12 +11,18 @@
     "url": "git+https://github.com/aleksei24/webpack.git"
   },
   "keywords": [
-    "webpack", "js", "javascript"
+    "webpack",
+    "js",
+    "javascript"
   ],
   "author": "Alexey",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aleksei24/webpack/issues"
   },
-  "homepage": "https://github.com/aleksei24/webpack#readme"
+  "homepage": "https://github.com/aleksei24/webpack#readme",
+  "devDependencies": {
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  }
 }
