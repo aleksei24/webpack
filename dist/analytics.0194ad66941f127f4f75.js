@@ -1,0 +1,1 @@
+window.analytic=function(){let t=0,e=!1;const n=()=>t++;return document.addEventListener("click",n),{destroy(){document.removeEventListener("click",n),e=!0},getClick:()=>e?`Analytic is destroyed. Total amount of clicks = ${t} `:t}}();
