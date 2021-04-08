@@ -1,0 +1,10 @@
+.wrapper {
+    margin: 0 auto;
+    padding: 1.5rem;
+    max-width: 1000px;
+}
+
+h1 {
+    text-align: center;
+    color: chocolate;
+}
