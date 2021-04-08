@@ -30,6 +30,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 /***/ }),
 
+/***/ "./assets/maya.jpg":
+/*!*************************!*\
+  !*** ./assets/maya.jpg ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/58e2f84e7a99114dabb7f2e92ebe56e1.jpg\");\n\n//# sourceURL=webpack:///./assets/maya.jpg?");
+
+/***/ }),
+
 /***/ "./styles/styles.css":
 /*!***************************!*\
   !*** ./styles/styles.css ***!
@@ -66,7 +76,7 @@ eval("module.exports = JSON.parse('{\"title\":\"I am JSON file\"}');\n\n//# sour
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./post */ \"./post.js\");\n/* harmony import */ var _assets_myJson__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/myJson */ \"./assets/myJson.json\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/styles.css */ \"./styles/styles.css\");\n\r\n\r\n\r\n\r\nconst post = new _post__WEBPACK_IMPORTED_MODULE_0__.default('Webpack Post Title');\r\n\r\nconsole.log('Post to String', post.toString());\r\n\r\nconsole.log('JSON', _assets_myJson__WEBPACK_IMPORTED_MODULE_1__);\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./post */ \"./post.js\");\n/* harmony import */ var _assets_myJson__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/myJson */ \"./assets/myJson.json\");\n/* harmony import */ var _assets_maya_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/maya.jpg */ \"./assets/maya.jpg\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/styles.css */ \"./styles/styles.css\");\n\r\n\r\n\r\n\r\n\r\nconst post = new _post__WEBPACK_IMPORTED_MODULE_0__.default('Webpack Post Title', _assets_maya_jpg__WEBPACK_IMPORTED_MODULE_2__.default);\r\n\r\nconsole.log('Post to String', post.toString());\r\n\r\nconsole.log('JSON', _assets_myJson__WEBPACK_IMPORTED_MODULE_1__);\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -76,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pos
   \*****************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\r\n    constructor(title) {\r\n        this.title = title;\r\n        this.date = new Date();\r\n    }\r\n\r\n    toString() {\r\n        return JSON.stringify({\r\n            title: this.title,\r\n            date: this.date.toJSON(),\r\n        });\r\n    }\r\n\r\n    get uppercaseTitle() {\r\n        return this.title.toUpperCase();\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./post.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\r\n    constructor(title, img) {\r\n        this.title = title;\r\n        this.img = img;\r\n        this.date = new Date();\r\n    }\r\n\r\n    toString() {\r\n        return JSON.stringify({\r\n            title: this.title,\r\n            date: this.date.toJSON(),\r\n            img: this.img,\r\n        });\r\n    }\r\n\r\n    get uppercaseTitle() {\r\n        return this.title.toUpperCase();\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./post.js?");
 
 /***/ })
 
@@ -131,6 +141,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -145,6 +167,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
