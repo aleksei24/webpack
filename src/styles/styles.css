@@ -1,9 +1,9 @@
 @import '~normalize.css';
 /* it is important here to use tilde */
-@import 'tegomin.css';
+@import 'raleway.css';
 
 .wrapper {
-    font-family: 'Tegomin';
+    font-family: 'Raleway';
     margin: 0 auto;
     padding: 1.5rem;
     max-width: 1000px;
