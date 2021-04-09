@@ -8,6 +8,6 @@ const post = new Post('Webpack Post Title', pic);
 
 console.log('Post to String', post.toString());
 
-$('pre').html(post.toString());
+$('pre').addClass('orange').html(post.toString());
 
 // console.log('JSON', json);
