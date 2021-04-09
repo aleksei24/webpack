@@ -19,7 +19,7 @@ module.exports = {
     },
     optimization: {
         splitChunks: {
-            chuncks: 'all',
+            chunks: 'all',
         },
     },
     plugins: [
