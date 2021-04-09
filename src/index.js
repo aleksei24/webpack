@@ -1,9 +1,9 @@
 import Post from './post';
 import json from './assets/myJson';
-import img from './assets/maya.jpg';
+import pic from './assets/maya.jpg';
 import './styles/styles.css';
 
-const post = new Post('Webpack Post Title', img);
+const post = new Post('Webpack Post Title', pic);
 
 console.log('Post to String', post.toString());
 

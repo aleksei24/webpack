@@ -8,3 +8,11 @@ h1 {
     text-align: center;
     color: chocolate;
 }
+
+.maya {
+    background-image: url(../assets/maya.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
