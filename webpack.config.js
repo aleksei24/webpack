@@ -31,7 +31,6 @@ module.exports = {
             template: './index.html',
         }),
         new CleanWebpackPlugin(),
-        new FontfacegenWebpackPlugin({ tasks: ['NewTegomin-Regular.ttf'] }),
     ],
     module: {
         rules: [
