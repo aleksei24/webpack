@@ -3,6 +3,10 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
+
+const isDev = process.env.NODE_ENV === 'development';
+console.log('DEV: ', isDev);
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -26,6 +30,7 @@ module.exports = {
     },
     devServer: {
         port: 4200,
+        hot: isDev,
     },
     plugins: [
         new HTMLWebpackPlugin({
@@ -43,6 +48,14 @@ module.exports = {
 
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
+        }),
+        new OptimizeCssAssetPlugin({
+            assetNameRegExp: /\.optimize\.css$/g,
+            cssProcessor: require('cssnano'),
+            cssProcessorPluginOptions: {
+                preset: ['default', { discardComments: { removeAll: true } }],
+            },
+            canPrint: true,
         }),
     ],
     module: {
