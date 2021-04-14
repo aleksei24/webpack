@@ -85,6 +85,16 @@ module.exports = {
                 ],
             },
             {
+                test: /\.less$/i,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {},
+                    },
+                    'css-loader',
+                ],
+            },
+            {
                 test: /\.(png|jpe?g|gif|svg|webp)$/i,
                 use: ['file-loader'],
             },
