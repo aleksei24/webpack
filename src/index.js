@@ -3,6 +3,7 @@ import Post from '@models/post';
 import json from './assets/myJson';
 import pic from './assets/maya.jpg';
 import './styles/styles.css';
+import './styles/less.less';
 
 const post = new Post('Webpack Post Title', pic);
 

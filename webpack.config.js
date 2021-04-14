@@ -25,12 +25,15 @@ const optimization = () => {
     return config;
 };
 
+const filename = (ext) =>
+    isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
+
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: { main: './index.js', analytics: './analytic.js' },
     output: {
-        filename: '[name].[contenthash].js',
+        filename: filename('js'),
         path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
@@ -61,7 +64,7 @@ module.exports = {
         }),
 
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
+            filename: filename('css'),
         }),
         new OptimizeCssAssetPlugin({
             assetNameRegExp: /\.optimize\.css$/g,
@@ -92,6 +95,7 @@ module.exports = {
                         options: {},
                     },
                     'css-loader',
+                    'less-loader',
                 ],
             },
             {
