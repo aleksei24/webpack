@@ -47,7 +47,10 @@ const cssLoaders = (extra) => {
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
-    entry: { main: './index.js', analytics: './analytic.js' },
+    entry: {
+        main: ['@babel/polyfill', './index.js'],
+        analytics: './analytic.js',
+    },
     output: {
         filename: filename('js'),
         path: path.resolve(__dirname, 'dist'),
@@ -112,6 +115,17 @@ module.exports = {
             {
                 test: /\.(ttf|woff|woff2|eot)$/i,
                 use: ['file-loader'],
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env'],
+                        plugins: ['@babel/plugin-proposal-class-properties'],
+                    },
+                },
             },
         ],
     },
