@@ -11,6 +11,9 @@ const post = new Post('Webpack Post Title', pic);
 
 console.log('Post to String', post.toString());
 
-$('pre').addClass('orange').html(post.toString());
+const pre = document.querySelector('pre');
+pre.classList.add('orange');
+pre.innerHTML = post.toString();
+// $('pre').addClass('orange').html(post.toString());
 
 // console.log('JSON', json);
