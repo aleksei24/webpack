@@ -1,5 +1,3 @@
-import * as $ from 'jquery';
-
 // function to count clicks
 // the file linked in the head oh html (it doesn't manipulate any DOM element)
 
@@ -9,11 +7,11 @@ function createAnalytic() {
 
     const listener = () => counter++;
 
-    $(document).on('click', listener);
+    document.addEventListener('click', listener);
 
     return {
         destroy() {
-            $(document).off('click', listener);
+            document.removeEventListener('click', listener);
             isDestroyed = true;
         },
 
