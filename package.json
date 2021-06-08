@@ -1,13 +1,11 @@
 {
   "name": "my_own_webpack",
   "version": "1.0.0",
+  "main": "index.js",
   "description": "attempt to build my own webpack template",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --mode development",
-    "build": "cross-env NODE_ENV=production webpack --mode production",
-    "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "start": "cross-env NODE_ENV=development webpack serve --open"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserslist": "> 0.25%, not dead",
   "repository": {
