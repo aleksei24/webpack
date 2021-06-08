@@ -17,16 +17,12 @@ const optimization = () => {
     };
 
     if (isProd) {
-        config.minimizer = [
-            new OptimizeCssAssetPlugin(),
-            new TerserWebpackPlugin(),
-        ];
+        config.minimizer = [new OptimizeCssAssetPlugin(), new TerserWebpackPlugin()];
     }
     return config;
 };
 
-const filename = (ext) =>
-    isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
+const filename = (ext) => (isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`);
 
 const cssLoaders = (extra) => {
     const loaders = [
