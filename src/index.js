@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 const mainWrapper = document.querySelector('.wrapper');
 
 function testFunction() {
