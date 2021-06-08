@@ -44,7 +44,7 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: ['@babel/polyfill', './index.js'],
+        main: ['./index.js'],
         analytics: './analytic.js',
     },
     output: {
@@ -97,14 +97,6 @@ module.exports = {
                 use: cssLoaders(),
             },
             {
-                test: /\.less$/i,
-                use: cssLoaders('less-loader'),
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: cssLoaders('sass-loader'),
-            },
-            {
                 test: /\.(png|jpe?g|gif|svg|webp)$/i,
                 use: ['file-loader'],
             },
@@ -116,11 +108,8 @@ module.exports = {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env'],
-                        plugins: ['@babel/plugin-proposal-class-properties'],
-                    },
+                    loader: '',
+                    options: {},
                 },
             },
         ],
