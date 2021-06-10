@@ -17680,6 +17680,27 @@ module.exports = {"note":{"to":["Mary"],"from":["John"],"heading":["Reminder"],"
 
 module.exports = [["to","from","heading","body"],["Mary","John","Reminder","Call Cindy on Tuesday"],["Zoe","Bill","Reminder","Buy orange juice"],["Autumn","Lindsey","Letter","I miss you"]]
 
+/***/ }),
+/* 12 */
+/***/ (function(module) {
+
+"use strict";
+module.exports = JSON.parse('{"title":"TOML Example","owner":{"name":"Tom Preston-Werner","organization":"GitHub","bio":"GitHub Cofounder & CEO\\nLikes tater tots and beer.","dob":"1979-05-27T07:32:00.000Z"}}');
+
+/***/ }),
+/* 13 */
+/***/ (function(module) {
+
+"use strict";
+module.exports = JSON.parse('{"title":"YAML Example","owner":{"name":"Tom Preston-Werner","organization":"GitHub","bio":"GitHub Cofounder & CEO\\nLikes tater tots and beer.","dob":"1979-05-27T07:32:00.000Z"}}');
+
+/***/ }),
+/* 14 */
+/***/ (function(module) {
+
+"use strict";
+module.exports = JSON.parse('{"title":"JSON5 Example","owner":{"name":"Tom Preston-Werner","organization":"GitHub","bio":"GitHub Cofounder & CEO Likes tater tots and beer.","dob":"1979-05-27T07:32:00.000Z"}}');
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -17806,11 +17827,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_xml__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
 /* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_data_csv__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _data_toml__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(12);
+/* harmony import */ var _data_yaml__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(13);
+/* harmony import */ var _data_json5__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(14);
 
 
 
 
 
+
+
+
+
+console.log(_data_toml__WEBPACK_IMPORTED_MODULE_5__.title); // output `TOML Example`
+console.log(_data_toml__WEBPACK_IMPORTED_MODULE_5__.owner.name); // output `Tom Preston-Werner`
+
+console.log(_data_yaml__WEBPACK_IMPORTED_MODULE_6__.title); // output `YAML Example`
+console.log(_data_yaml__WEBPACK_IMPORTED_MODULE_6__.owner.name); // output `Tom Preston-Werner`
+
+console.log(_data_json5__WEBPACK_IMPORTED_MODULE_7__.title); // output `JSON5 Example`
+console.log(_data_json5__WEBPACK_IMPORTED_MODULE_7__.owner.name); // output `Tom Preston-Werner`
 
 const mainWrapper = document.querySelector('.wrapper');
 
