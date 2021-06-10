@@ -1,7 +1,6 @@
 {
   "name": "my_own_webpack",
   "version": "1.0.0",
-  "main": "index.js",
   "description": "attempt to build my own webpack template",
   "private": true,
   "scripts": {
