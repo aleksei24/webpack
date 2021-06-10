@@ -17668,6 +17668,18 @@ module.exports = __webpack_require__.p + "2c3a58b16b076334fc4b.woff2";
 "use strict";
 module.exports = __webpack_require__.p + "bdf69381eca2dd1dab9f.jpg";
 
+/***/ }),
+/* 10 */
+/***/ (function(module) {
+
+module.exports = {"note":{"to":["Mary"],"from":["John"],"heading":["Reminder"],"body":["Call Cindy on Tuesday"]}}
+
+/***/ }),
+/* 11 */
+/***/ (function(module) {
+
+module.exports = [["to","from","heading","body"],["Mary","John","Reminder","Call Cindy on Tuesday"],["Zoe","Bill","Reminder","Buy orange juice"],["Autumn","Lindsey","Letter","I miss you"]]
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -17790,6 +17802,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _maya_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9);
+/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(10);
+/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_xml__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
+/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_data_csv__WEBPACK_IMPORTED_MODULE_4__);
+
+
 
 
 
@@ -17806,6 +17824,9 @@ function testFunction() {
     myFirstImg.src = _maya_jpg__WEBPACK_IMPORTED_MODULE_2__;
 
     firstTitle.appendChild(myFirstImg);
+
+    console.log((_data_xml__WEBPACK_IMPORTED_MODULE_3___default()));
+    console.log((_data_csv__WEBPACK_IMPORTED_MODULE_4___default()));
 
     return firstTitle;
 }

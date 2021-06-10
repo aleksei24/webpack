@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import './style.css';
 import imgMaya from './maya.jpg';
+import data from './data.xml';
+import note from './data.csv';
 
 const mainWrapper = document.querySelector('.wrapper');
 
@@ -14,6 +16,9 @@ function testFunction() {
     myFirstImg.src = imgMaya;
 
     firstTitle.appendChild(myFirstImg);
+
+    console.log(data);
+    console.log(note);
 
     return firstTitle;
 }
