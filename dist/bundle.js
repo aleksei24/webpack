@@ -17516,9 +17516,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Brush_woff__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
-/* harmony import */ var _Brush_woff2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
-/* harmony import */ var _maya_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
+/* harmony import */ var _fonts_Brush_woff__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
+/* harmony import */ var _fonts_Brush_woff2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
+/* harmony import */ var _img_maya_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 // Imports
 
 
@@ -17526,9 +17526,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_Brush_woff__WEBPACK_IMPORTED_MODULE_2__);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_Brush_woff2__WEBPACK_IMPORTED_MODULE_3__);
-var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_maya_jpg__WEBPACK_IMPORTED_MODULE_4__);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_fonts_Brush_woff__WEBPACK_IMPORTED_MODULE_2__);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_fonts_Brush_woff2__WEBPACK_IMPORTED_MODULE_3__);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_img_maya_jpg__WEBPACK_IMPORTED_MODULE_4__);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\r\n    font-family: 'brush';\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(woff), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(woff2);\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n.pink {\r\n    color: hotpink;\r\n    font-family: 'brush';\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\r\n}\r\n", ""]);
 // Exports
@@ -17822,14 +17822,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _maya_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9);
-/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(10);
-/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_xml__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
-/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_data_csv__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _data_toml__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(12);
-/* harmony import */ var _data_yaml__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(13);
-/* harmony import */ var _data_json5__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(14);
+/* harmony import */ var _img_maya_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9);
+/* harmony import */ var _data_data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(10);
+/* harmony import */ var _data_data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_data_xml__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _data_data_csv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
+/* harmony import */ var _data_data_csv__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_data_data_csv__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _data_data_toml__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(12);
+/* harmony import */ var _data_data_yaml__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(13);
+/* harmony import */ var _data_data_json5__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(14);
 
 
 
@@ -17839,14 +17839,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-console.log(_data_toml__WEBPACK_IMPORTED_MODULE_5__.title); // output `TOML Example`
-console.log(_data_toml__WEBPACK_IMPORTED_MODULE_5__.owner.name); // output `Tom Preston-Werner`
+console.log(_data_data_toml__WEBPACK_IMPORTED_MODULE_5__.title); // output `TOML Example`
+console.log(_data_data_toml__WEBPACK_IMPORTED_MODULE_5__.owner.name); // output `Tom Preston-Werner`
 
-console.log(_data_yaml__WEBPACK_IMPORTED_MODULE_6__.title); // output `YAML Example`
-console.log(_data_yaml__WEBPACK_IMPORTED_MODULE_6__.owner.name); // output `Tom Preston-Werner`
+console.log(_data_data_yaml__WEBPACK_IMPORTED_MODULE_6__.title); // output `YAML Example`
+console.log(_data_data_yaml__WEBPACK_IMPORTED_MODULE_6__.owner.name); // output `Tom Preston-Werner`
 
-console.log(_data_json5__WEBPACK_IMPORTED_MODULE_7__.title); // output `JSON5 Example`
-console.log(_data_json5__WEBPACK_IMPORTED_MODULE_7__.owner.name); // output `Tom Preston-Werner`
+console.log(_data_data_json5__WEBPACK_IMPORTED_MODULE_7__.title); // output `JSON5 Example`
+console.log(_data_data_json5__WEBPACK_IMPORTED_MODULE_7__.owner.name); // output `Tom Preston-Werner`
 
 const mainWrapper = document.querySelector('.wrapper');
 
@@ -17857,12 +17857,12 @@ function testFunction() {
     firstTitle.classList.add('pink');
 
     const myFirstImg = new Image();
-    myFirstImg.src = _maya_jpg__WEBPACK_IMPORTED_MODULE_2__;
+    myFirstImg.src = _img_maya_jpg__WEBPACK_IMPORTED_MODULE_2__;
 
     firstTitle.appendChild(myFirstImg);
 
-    console.log((_data_xml__WEBPACK_IMPORTED_MODULE_3___default()));
-    console.log((_data_csv__WEBPACK_IMPORTED_MODULE_4___default()));
+    console.log((_data_data_xml__WEBPACK_IMPORTED_MODULE_3___default()));
+    console.log((_data_data_csv__WEBPACK_IMPORTED_MODULE_4___default()));
 
     return firstTitle;
 }
