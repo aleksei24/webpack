@@ -13,7 +13,7 @@ function testFunction() {
 
     innerDiv.appendChild(myBtn);
 
-    return firstTitle;
+    return innerDiv;
 }
 
 mainWrapper.appendChild(testFunction());

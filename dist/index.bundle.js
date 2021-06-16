@@ -17208,6 +17208,20 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 }.call(this));
 
 
+/***/ }),
+/* 2 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ printMe; }
+/* harmony export */ });
+function printMe() {
+    console.log('I get called from printJS');
+}
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -17308,16 +17322,23 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _print_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+
 
 
 const mainWrapper = document.querySelector('.wrapper');
 
 function testFunction() {
-    const firstTitle = document.createElement('div');
+    const innerDiv = document.createElement('div');
+    const myBtn = document.createElement('button');
 
-    firstTitle.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'this is', 'my Webpack'], ' ');
+    innerDiv.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'this is', 'my Webpack'], ' ');
+    myBtn.innerHTML = 'Poke me and go to the console';
+    myBtn.addEventListener('click', _print_js__WEBPACK_IMPORTED_MODULE_1__.default);
 
-    return firstTitle;
+    innerDiv.appendChild(myBtn);
+
+    return innerDiv;
 }
 
 mainWrapper.appendChild(testFunction());
