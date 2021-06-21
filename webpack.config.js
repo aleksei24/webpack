@@ -4,6 +4,9 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: { index: './src/index.js', print: './src/print.js' },
     devtool: 'inline-source-map',
+    devServer: {
+        contentBase: '/dist',
+    },
     plugins: [new htmlWebpackPlugin({ title: 'Development' })],
     output: {
         filename: '[name].bundle.js',
