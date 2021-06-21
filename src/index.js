@@ -16,4 +16,5 @@ function testFunction() {
     return innerDiv;
 }
 
-mainWrapper.appendChild(testFunction());
+// mainWrapper.appendChild(testFunction());
+document.body.appendChild(testFunction());
