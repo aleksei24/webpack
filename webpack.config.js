@@ -18,4 +18,7 @@ module.exports = {
         clean: true,
     },
     mode: 'development',
+    optimization: {
+        runtimeChunk: 'single',
+    },
 };
