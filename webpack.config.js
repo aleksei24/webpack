@@ -9,9 +9,9 @@ module.exports = {
     devServer: {
         contentBase: '/dist',
     },
-    plugins: [new htmlWebpackPlugin({ title: 'Development' })],
+    plugins: [new htmlWebpackPlugin({ title: 'Caching' })],
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
