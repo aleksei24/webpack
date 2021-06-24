@@ -3,9 +3,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: { import: './src/index.js', dependOn: 'shared' },
-        another: { import: './src/another_module.js', dependOn: 'shared' },
-        shared: 'lodash',
+        index: './src/index.js',
     },
     devtool: 'inline-source-map',
     devServer: {
@@ -18,9 +16,4 @@ module.exports = {
         clean: true,
     },
     mode: 'development',
-    optimization: {
-        splitChunks: {
-            chunks: 'all',
-        },
-    },
 };
