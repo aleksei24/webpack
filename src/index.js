@@ -1,18 +1,13 @@
-import _ from 'lodash';
-
 const mainWrapper = document.querySelector('.wrapper');
 
-function testFunction() {
+async function getComponent() {
     const innerDiv = document.createElement('div');
-    const myBtn = document.createElement('button');
+    const { default: _ } = await import('lodash');
 
     innerDiv.innerHTML = _.join(['Hello', 'this is', 'my Webpack'], ' ');
-    myBtn.innerHTML = 'Poke me and go to the console';
-
-    innerDiv.appendChild(myBtn);
-
     return innerDiv;
 }
 
-// mainWrapper.appendChild(testFunction());
-document.body.appendChild(testFunction());
+getComponent().then((innerDiv) => {
+    document.body.appendChild(innerDiv);
+});
