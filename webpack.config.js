@@ -2,7 +2,11 @@ const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: { index: './src/index.js', another: './src/another_module.js' },
+    entry: {
+        index: { import: './src/index.js', dependOn: 'shared' },
+        another: { import: './src/another_module.js', dependOn: 'shared' },
+        shared: 'lodash',
+    },
     devtool: 'inline-source-map',
     devServer: {
         contentBase: '/dist',
