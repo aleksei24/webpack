@@ -1,13 +1,15 @@
+import _ from 'lodash';
+import Print from './print';
+
 const mainWrapper = document.querySelector('.wrapper');
 
 async function getComponent() {
     const innerDiv = document.createElement('div');
-    const { default: _ } = await import('lodash');
 
     innerDiv.innerHTML = _.join(['Hello', 'this is', 'my Webpack'], ' ');
+    innerDiv.addEventListener('click', Print.bind(null, 'Hello Webpack'));
+
     return innerDiv;
 }
 
-getComponent().then((innerDiv) => {
-    document.body.appendChild(innerDiv);
-});
+document.body.appendChild(innerDiv);
