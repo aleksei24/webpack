@@ -17,6 +17,7 @@ module.exports = {
     },
     mode: 'development',
     optimization: {
+        moduleIds: 'deterministic',
         runtimeChunk: 'single',
         splitChunks: {
             cacheGroups: {
