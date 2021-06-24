@@ -2,7 +2,7 @@ const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: { index: './src/index.js', print: './src/print.js' },
+    entry: { index: './src/index.js', another: './src/another_module.js' },
     devtool: 'inline-source-map',
     devServer: {
         contentBase: '/dist',
