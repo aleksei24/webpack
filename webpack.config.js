@@ -17,5 +17,13 @@ module.exports = {
         },
         clean: true,
     },
+    externals: {
+        lodash: {
+            commonjs: 'lodash',
+            commonjs2: 'lodash',
+            amd: 'lodash',
+            root: '_',
+        },
+    },
     mode: 'development',
 };
