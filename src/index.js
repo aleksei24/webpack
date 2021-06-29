@@ -1,15 +1,22 @@
 import _ from 'lodash';
-import Print from './print';
+import numRefer from './refer.json';
 
-const mainWrapper = document.querySelector('.wrapper');
-
-async function getComponent() {
-    const innerDiv = document.createElement('div');
-
-    innerDiv.innerHTML = _.join(['Hello', 'this is', 'my Webpack'], ' ');
-    innerDiv.addEventListener('click', Print.bind(null, 'Hello Webpack'));
-
-    return innerDiv;
+export function numToWord(num) {
+    return _.reduce(
+        numRefer,
+        (acc, ref) => {
+            return ref.num === num ? ref.word : acc;
+        },
+        ''
+    );
 }
 
-document.body.appendChild(innerDiv);
+export function wordToNum(num) {
+    return _.reduce(
+        numRefer,
+        (acc, ref) => {
+            return ref.word === word && word.toLowerCase() ? ref.num : acc;
+        },
+        ''
+    );
+}

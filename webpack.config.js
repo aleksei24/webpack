@@ -1,5 +1,4 @@
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -9,24 +8,14 @@ module.exports = {
     devServer: {
         contentBase: '/dist',
     },
-    plugins: [new htmlWebpackPlugin({ title: 'Caching' })],
     output: {
-        filename: '[name].[contenthash].js',
+        filename: 'webpack-numbers.js',
         path: path.resolve(__dirname, 'dist'),
+        library: {
+            name: 'webpackNumbers',
+            type: 'umd',
+        },
         clean: true,
     },
     mode: 'development',
-    optimization: {
-        moduleIds: 'deterministic',
-        runtimeChunk: 'single',
-        splitChunks: {
-            cacheGroups: {
-                vendor: {
-                    test: /[\\/]node_modules[\\/]/,
-                    name: 'vendors',
-                    chunks: 'all',
-                },
-            },
-        },
-    },
 };
