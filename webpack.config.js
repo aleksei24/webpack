@@ -1,4 +1,6 @@
 const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+const { title } = require('process');
 
 module.exports = {
     entry: {
@@ -6,8 +8,13 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: '/dist',
+        contentBase: './dist',
     },
+    plugins: [
+        new htmlWebpackPlugin({
+            title: 'Output',
+        }),
+    ],
     output: {
         filename: 'webpack-numbers.js',
         path: path.resolve(__dirname, 'dist'),
