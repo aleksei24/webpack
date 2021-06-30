@@ -1,36 +1,25 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-const { title } = require('process');
 
 module.exports = {
     entry: {
         index: './src/index.js',
+        print: './src/print.js',
     },
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
+        hot: true,
     },
     plugins: [
         new htmlWebpackPlugin({
-            title: 'Output',
+            title: 'Hot Module Replacement',
         }),
     ],
     output: {
-        filename: 'webpack-numbers.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        library: {
-            name: 'webpackNumbers',
-            type: 'umd',
-        },
         clean: true,
-    },
-    externals: {
-        lodash: {
-            commonjs: 'lodash',
-            commonjs2: 'lodash',
-            amd: 'lodash',
-            root: '_',
-        },
     },
     mode: 'development',
 };

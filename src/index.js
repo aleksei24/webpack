@@ -1,22 +1,25 @@
 import _ from 'lodash';
-import numRefer from './refer.json';
+import printMe from './print.js';
 
-export function numToWord(num) {
-    return _.reduce(
-        numRefer,
-        (acc, ref) => {
-            return ref.num === num ? ref.word : acc;
-        },
-        ''
-    );
+function component() {
+    const myDiv = document.createElement('div');
+    const myBtn = document.createElement('button');
+
+    myDiv.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+    myBtn.innerHTML = 'Poke me and go to the console';
+    myBtn.addEventListener('click', printMe);
+
+    myDiv.appendChild(myBtn);
+
+    return myDiv;
 }
 
-export function wordToNum(num) {
-    return _.reduce(
-        numRefer,
-        (acc, ref) => {
-            return ref.word === word && word.toLowerCase() ? ref.num : acc;
-        },
-        ''
-    );
+document.body.appendChild(component());
+
+if (module.hot) {
+    module.hot.accept('./print.js', function () {
+        console.log('Accepting the printMe module');
+        printMe();
+    });
 }
