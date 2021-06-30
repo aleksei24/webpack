@@ -9,11 +9,21 @@ function component() {
     myDiv.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
     myBtn.innerHTML = 'Poke me and go to the console';
-    myBtn.onclick = printMe;
+    myBtn.addEventListener('click', printMe);
 
     myDiv.appendChild(myBtn);
 
     return myDiv;
 }
 
-document.body.appendChild(component());
+let myElem = component();
+document.body.appendChild(myElem);
+
+if (module.hot) {
+    module.hot.accept('./print.js', function () {
+        console.log('Accepting the printMe module');
+        document.body.removeChild(myElem);
+        myElem = component();
+        document.body.appendChild(myElem);
+    });
+}
