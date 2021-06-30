@@ -4,12 +4,10 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         index: './src/index.js',
-        print: './src/print.js',
     },
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
-        hot: true,
     },
     plugins: [
         new htmlWebpackPlugin({
