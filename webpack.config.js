@@ -1,5 +1,6 @@
 module.exports = {
-    mode: 'production',
+    mode: 'production', // mode by default
+    // mode: 'development',
     module: {
         rules: [
             {
@@ -11,4 +12,6 @@ module.exports = {
             },
         ],
     },
+    // if you need it, just use
+    // devtool: 'source-map',
 };
