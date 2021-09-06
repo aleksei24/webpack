@@ -1,0 +1,1 @@
+!function(){"use strict";console.log("ran from index.js"),console.log("Agent 007"),console.log("Behemoth")}();
