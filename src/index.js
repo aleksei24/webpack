@@ -1,4 +1,4 @@
-import getClasses from './getClass';
+import logVariables from './logVariables';
 
 console.log('ran from index.js');
-getClasses();
+logVariables();
