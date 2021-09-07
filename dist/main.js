@@ -1,1 +1,1 @@
-!function(){"use strict";console.log("ran from index.js"),console.log("Agent 007"),console.log("Behemoth")}();
+!function(){"use strict";console.log("ran from index.js"),console.log("variables are displayed in console"),console.log("Agent 007"),console.log("Behemoth")}();

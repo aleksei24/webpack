@@ -1,6 +1,15 @@
+const path = require('path');
+
 module.exports = {
     mode: 'production', // mode by default
     // mode: 'development',
+    entry: './src/index.js',
+
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
+
     module: {
         rules: [
             {
@@ -17,5 +26,6 @@ module.exports = {
 
     devServer: {
         compress: true,
+        hot: true,
     },
 };
