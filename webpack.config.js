@@ -14,4 +14,8 @@ module.exports = {
     },
     // if you need it, just use
     // devtool: 'source-map',
+
+    devServer: {
+        contentBase: './dist',
+    },
 };
