@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
 
 $minWidth: 200px;
+$maxWidth: 1920px;
+$containerWidth: 1140px;
 $mainFont: Ubuntu;
 $bgColour: #fff;
 $headlineColour: red;
@@ -75,12 +77,12 @@ button {
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    max-width: 1920px;
+    max-width: $maxWidth;
     margin: 0 auto;
     background-color: $bgColour;
 }
 .container {
-    max-width: 1140px;
+    max-width: $containerWidth;
     width: 100%;
     height: auto;
     margin: 0 auto;
