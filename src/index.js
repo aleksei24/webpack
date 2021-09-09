@@ -5,7 +5,7 @@ logVariables();
 
 // =============================================
 // webpack styles workthrough
-import './style.css';
+import './style.scss';
 
 const headlineContent = 'Welcome';
 const headline = document.querySelector('#main-headline');
