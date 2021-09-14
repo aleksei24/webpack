@@ -8,6 +8,13 @@ logVariables();
 import './style.scss';
 import './test.css';
 
-const headlineContent = 'Welcome';
+import { randomPhrase } from './vibes';
+
+const headlineContent = randomPhrase;
 const headline = document.querySelector('#main-headline');
 headline.innerText = headlineContent;
+console.log(headlineContent);
+
+import { obTwo } from './testObjects';
+
+console.log(obTwo);
