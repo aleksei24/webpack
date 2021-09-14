@@ -16,5 +16,7 @@ headline.innerText = headlineContent;
 console.log(headlineContent);
 
 import { obTwo } from './testObjects';
+import { valsOfObj } from './testObjects';
 
 console.log(obTwo);
+console.log(valsOfObj);

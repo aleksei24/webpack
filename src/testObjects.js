@@ -5,3 +5,5 @@ const obOne = {
 };
 
 export const obTwo = { ...obOne, d: 4, e: 5 };
+
+export const valsOfObj = Object.values(obTwo);
