@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production webpack",
     "watch": "webpack --watch",
-    "start": "cross-env SERVE=true webpack serve"
+    "start": "cross-env webpack serve"
   },
   "browserslist": "> 0.25%, not dead",
   "repository": {
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/aleksei24/webpack#readme",
   "devDependencies": {
     "autoprefixer": "^10.3.4",
+    "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
