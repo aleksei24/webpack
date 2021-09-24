@@ -7,6 +7,9 @@ logVariables();
 // webpack styles workthrough
 import './style.scss';
 import './test.css';
+import 'tailwindcss/base.css';
+import 'tailwindcss/components.css';
+import 'tailwindcss/utilities.css';
 
 import { randomPhrase } from './vibes';
 
