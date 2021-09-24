@@ -24,6 +24,7 @@ module.exports = {
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             title: 'webpack Boilerplate',
+            favicon: './src/img/hard-hat.png',
             template: path.resolve(__dirname, './src/template.html'), // template file
             filename: 'index.html', // output file
         }),
