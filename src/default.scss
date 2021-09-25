@@ -1,9 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
-
 $minWidth: 200px;
 $maxWidth: 1920px;
 $containerWidth: 1140px;
-$mainFont: Ubuntu;
 $bgColour: #fff;
 $headlineColour: red;
 
@@ -20,7 +17,6 @@ body {
 body {
     font-size: 16px;
     background-color: $bgColour;
-    font-family: $mainFont;
     font-weight: normal;
 }
 
@@ -80,6 +76,13 @@ button {
     max-width: $maxWidth;
     margin: 0 auto;
     background-color: $bgColour;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* ========================================== */
