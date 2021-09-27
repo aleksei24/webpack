@@ -6,7 +6,7 @@ logVariables();
 // =============================================
 // webpack styles workthrough
 // import './default.scss';
-// import './fonts.scss';
+import './fonts.scss';
 // import './test.css';
 import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';

@@ -63,6 +63,11 @@ module.exports = {
                     },
                 ],
             },
+            // Fonts and SVGs
+            {
+                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+                type: 'asset/resource',
+            },
         ],
     },
     // if you need it, just use
