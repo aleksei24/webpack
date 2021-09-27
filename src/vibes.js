@@ -19,3 +19,7 @@ export const vibes = [
 ];
 
 export const randomPhrase = vibes[Math.floor(Math.random() * Math.floor(vibes.length))];
+
+export const headline = document.querySelector('#main-headline');
+export const headlineContent = randomPhrase;
+headline.textContent = headlineContent;
