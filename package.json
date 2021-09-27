@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production webpack",
     "watch": "webpack --watch",
-    "start": "cross-env webpack serve"
+    "dev": "cross-env webpack serve"
   },
   "browserslist": "> 0.25%, not dead",
   "repository": {
