@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const { webpack } = require('webpack');
 
 const mode = process.env.NODE_ENV || 'development';
@@ -27,6 +28,16 @@ module.exports = {
             favicon: './src/img/hard-hat.ico',
             template: path.resolve(__dirname, './src/template.html'), // template file
             filename: 'index.html', // output file
+        }),
+        new ImageMinimizerPlugin({
+            minimizerOptions: {
+                plugins: ['jpegtran'],
+            },
+        }),
+        new ImageMinimizerPlugin({
+            deleteOriginalAssets: false,
+            filename: '[path][name].webp',
+            minimizerOptions: { plugins: ['imagemin-webp'] },
         }),
         new CleanWebpackPlugin(),
     ],
@@ -62,6 +73,11 @@ module.exports = {
                         },
                     },
                 ],
+            },
+            // Images
+            {
+                test: /\.(png|jpg|jpeg|webp)$/i,
+                type: 'asset/resource',
             },
             // Fonts and SVGs
             {
