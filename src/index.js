@@ -1,4 +1,4 @@
-import logVariables from './logVariables';
+import logVariables from './script/logVariables';
 
 console.log('ran from index.js');
 logVariables();
@@ -6,12 +6,15 @@ logVariables();
 // =============================================
 // webpack styles workthrough
 // import './default.scss';
-import './fonts.scss';
+// import './styles/fonts.scss';
 // import './test.css';
 import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
 import 'tailwindcss/utilities.css';
 
-import { randomPhrase, headline, headlineContent } from './vibes';
-import { text, app } from './displayText';
-import { obTwo, valsOfObj } from './testObjects';
+// =============================================
+// script
+import './script/vibes';
+import './script/displayText';
+// import { obTwo, valsOfObj } from './testObjects';
+// import './testObjects';
