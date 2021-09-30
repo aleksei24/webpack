@@ -7,8 +7,6 @@ const { webpack } = require('webpack');
 
 const mode = process.env.NODE_ENV || 'development';
 
-const target = process.env.NODE_ENV === 'production' ? 'production' : 'development';
-
 module.exports = {
     // mode: 'production', // mode by default
     // mode: 'development',
@@ -87,7 +85,8 @@ module.exports = {
         ],
     },
     // if you need it, just use
-    // devtool: 'source-map',
+    // devtool: 'source-map', // for production
+    devtool: 'eval-cheap-source-map', // for development
 
     devServer: {
         historyApiFallback: true,
