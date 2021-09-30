@@ -27,11 +27,11 @@ module.exports = {
             template: path.resolve(__dirname, './src/template.html'), // template file
             filename: 'index.html', // output file
         }),
-        new ImageMinimizerPlugin({
+        /*new ImageMinimizerPlugin({
             minimizerOptions: {
                 plugins: ['jpegtran'],
             },
-        }),
+        }),*/
         new ImageMinimizerPlugin({
             deleteOriginalAssets: false,
             filename: '[path][name].webp',
@@ -86,7 +86,7 @@ module.exports = {
     },
     // if you need it, just use
     // devtool: 'source-map', // for production
-    devtool: 'eval-cheap-source-map', // for development
+    // devtool: 'eval-cheap-source-map', // for development
 
     devServer: {
         historyApiFallback: true,
