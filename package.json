@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "webpack",
     "watch": "webpack --watch",
-    "dev": "cross-env NODE_ENV=development webpack serve"
+    "start": "webpack serve --open"
   },
   "browserslist": "> 0.25%, not dead",
   "repository": {
