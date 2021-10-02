@@ -1,30 +1,29 @@
-import logVariables from './script/logVariables';
+import _ from 'lodash';
+import printMe from './print.js';
+function component() {
+    const myDiv = document.createElement('div');
+    myDiv.classList.add('wrapper');
+    const myBtn = document.createElement('button');
+    myDiv.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-console.log('ran from index.js');
-logVariables();
+    myBtn.innerHTML = 'Poke me and go to the console';
+    myBtn.onclick = printMe;
+    myBtn.addEventListener('click', printMe);
 
-// ==========================================
-// img
-import imgOne from './img/calmness.webp';
-const putPic = document.querySelector('#putPic');
-const myImg1 = new Image();
-myImg1.src = imgOne;
-putPic.append(myImg1);
+    myDiv.appendChild(myBtn);
 
-// =============================================
-// webpack styles workthrough
-// import './default.scss';
-// import './styles/fonts.scss';
-// import './test.css';
-import 'tailwindcss/base.css';
-import 'tailwindcss/components.css';
-import 'tailwindcss/utilities.css';
+    return myDiv;
+}
 
-// =============================================
-// script
-import './script/vibes';
-import './script/displayText';
-import './script/getData';
-import './script/today';
-// import { obTwo, valsOfObj } from './testObjects';
-// import './testObjects';
+document.body.appendChild(component());
+let myElem = component();
+document.body.appendChild(myElem);
+
+if (module.hot) {
+    module.hot.accept('./print.js', function () {
+        console.log('Accepting the printMe module');
+        document.body.removeChild(myElem);
+        myElem = component();
+        document.body.appendChild(myElem);
+    });
+}
