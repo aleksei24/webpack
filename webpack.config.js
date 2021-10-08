@@ -92,7 +92,9 @@ module.exports = {
         historyApiFallback: true,
         open: true,
         compress: true,
-        hot: true,
+        hot: false,
         port: 8080,
+        liveReload: true,
+        watchFiles: ['src/*.html'],
     },
 };
