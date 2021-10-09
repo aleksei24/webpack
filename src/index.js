@@ -23,9 +23,5 @@ import 'tailwindcss/utilities.css';
 // =============================================
 // script
 import './script/vibes';
-import './script/displayText';
 import './script/getData';
 import './script/today';
-import './script/formTest';
-// import { obTwo, valsOfObj } from './testObjects';
-// import './testObjects';
