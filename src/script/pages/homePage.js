@@ -8,7 +8,7 @@ export default class extends mainPage {
 
     getHtml() {
         return `
-          <h1>Home Page</h1>
+          <h1 id='home-headline'>Home Page</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi
             autem, sit odit perferendis accusamus perspiciatis enim reiciendis qui?   Animi
