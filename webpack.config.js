@@ -11,7 +11,7 @@ module.exports = {
     },
     plugins: [
         new htmlWebpackPlugin({
-            title: 'Hot Module Replacement',
+            title: 'Webpack Basic Template',
         }),
     ],
     output: {
