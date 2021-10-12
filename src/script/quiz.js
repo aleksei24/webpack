@@ -1,4 +1,9 @@
 import './appearance';
-import { data } from './data/data';
-console.log(data);
-import './models/Question';
+import { questions } from './data/question';
+import { Quiz } from './models/Quiz';
+
+function main() {
+    const quiz = new Quiz(questions);
+}
+
+main();
