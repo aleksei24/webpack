@@ -7,15 +7,18 @@
         <title><%= htmlWebpackPlugin.options.title %></title>
     </head>
     <body>
-        <div id="app" class="container mx-auto px-3">
-            <h1
-                id="main-headline"
-                class="text-center text-2xl sm:text-3xl md:text-5xl my-10 font-bold text-red-700"
-            ></h1>
-
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 my-10">
-                <div class="border-2 border-black rounded-sm p-1" id="today"></div>
+        <div id="quiz">
+            <h1 id="headline">Quiz</h1>
+            <h2 id="question">There will be a question</h2>
+            <div id="choices">
+                <button>There will be a button</button>
+                <button>There will be a button</button>
+                <button>There will be a button</button>
+                <button>There will be a button</button>
             </div>
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
         </div>
     </body>
 </html>

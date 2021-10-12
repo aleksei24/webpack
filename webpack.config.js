@@ -22,7 +22,7 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
-            title: 'Webpack Boilerplate',
+            title: 'Quiz',
             favicon: './src/img/hard-hat.ico',
             template: path.resolve(__dirname, './src/template.html'), // template file
             filename: 'index.html', // output file
@@ -86,7 +86,7 @@ module.exports = {
     },
     // if you need it, just use
     // devtool: 'source-map', // for production
-    devtool: 'eval-cheap-source-map', // for development
+    devtool: 'eval-source-map', // for development
 
     devServer: {
         historyApiFallback: true,
