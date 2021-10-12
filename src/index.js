@@ -1,7 +1,5 @@
 console.log('ran from index.js');
 
-// ==========================================
-
 // =============================================
 // webpack styles workthrough
 // import './default.scss';
