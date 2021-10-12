@@ -7,7 +7,7 @@ export const data = [
     {
         question: 'One hundred coats, and all without buttons',
         choices: ['potato', 'cabbage', 'tomato', 'onion'],
-        answer: 'onion',
+        answer: 'cabbage',
     },
     {
         question: 'A sack crawls carrying needles',
