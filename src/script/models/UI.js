@@ -22,7 +22,7 @@ export class UI {
             const btn = document.createElement('button');
             btn.innerText = choices[i];
             btn.classList =
-                'bg-yellow-600 my-3 border-2 border-solid rounded-xl p-2 text-yellow-100 w-72 h-16 text-2xl';
+                'bg-yellow-600 my-2 border-2 border-solid rounded-xl p-2 text-yellow-100 w-36 h-12 md:h-16 text-base md:text-2xl';
             btn.addEventListener('click', () => callback(choices[i]));
             choicesContainer.append(btn);
         }
@@ -34,8 +34,8 @@ export class UI {
      */
     showScores(score) {
         const quizEndHtml = `
-            <h1 class='text-4xl mb-8'>Result</h1>
-            <h3 class='text-3xl'>Your Score is ${score}</h3>
+            <h1 class='text-2xl mb-8'>Result</h1>
+            <h3 class='text-base'>Your Score is ${score}</h3>
         `;
         const elem = document.querySelector('#quiz');
         elem.innerHTML = quizEndHtml;
