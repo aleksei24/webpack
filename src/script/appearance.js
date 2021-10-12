@@ -12,9 +12,9 @@ const choices = document.querySelector('#choices');
 const choicesElem = choices.children;
 choices.classList = 'flex flex-col items-center';
 
-[...choicesElem].forEach((el) => {
-    el.classList = 'bg-yellow-600 my-3 border-2 border-solid rounded-xl p-2 text-yellow-100';
-});
+// [...choicesElem].forEach((el) => {
+//     el.classList = 'bg-yellow-600 my-3 border-2 border-solid rounded-xl p-2 text-yellow-100';
+// });
 
 const progress = document.querySelector('#progress');
 progress.classList = 'text-2xl';

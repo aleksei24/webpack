@@ -34,8 +34,8 @@ export class UI {
      */
     showScores(score) {
         const quizEndHtml = `
-            <h1>Result</h1>
-            <h3>Your Score ${score}</h3>
+            <h1 class='text-4xl mb-8'>Result</h1>
+            <h3 class='text-3xl'>Your Score is ${score}</h3>
         `;
         const elem = document.querySelector('#quiz');
         elem.innerHTML = quizEndHtml;
