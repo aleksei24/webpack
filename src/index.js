@@ -1,4 +1,4 @@
-console.log('ran from index.js');
+console.log('index.js');
 
 // =============================================
 // webpack styles workthrough
