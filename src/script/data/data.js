@@ -1,7 +1,7 @@
 export const data = [
     {
         question: 'What is always green',
-        choices: ['berch', 'fir', 'cactus', 'elm'],
+        choices: ['berch', 'fir', 'cactus', 'elm', 'palm'],
         answer: 'fir',
     },
     {
