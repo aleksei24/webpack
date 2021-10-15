@@ -8,8 +8,16 @@ fetch(currentUrl)
         console.log(data);
         for (let i = 0; i < data.articles.length / 2; i++) {
             const elemTitle = data.articles[i].title;
-            dataList.innerHTML += `<li class='my-2'>${elemTitle}</li>`;
-            dataList.classList = 'text-xl text-purple-400';
+            const elemLink = data.articles[i].url;
+            dataList.innerHTML += `
+                <li class='my-2'>
+                    <a href='${elemLink}' target='blank'>
+                        <span>${elemTitle}</span>    
+                    </a> 
+                </li>
+
+            `;
+            dataList.classList = 'text-2xl text-gray-500';
         }
 
         displayData.append(dataList);

@@ -6,7 +6,7 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const { webpack } = require('webpack');
 const Dotenv = require('dotenv-webpack');
 
-const mode = 'development';
+const mode = process.env.NODE_ENV || 'development';
 
 module.exports = {
     mode: mode,

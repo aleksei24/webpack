@@ -9,6 +9,6 @@ import 'tailwindcss/utilities.css';
 
 // =============================================
 // script
-import './script/vibes';
+import './script/headline';
 import './script/getData';
 import './script/today';
