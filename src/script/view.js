@@ -1,6 +1,5 @@
 const nav = document.querySelector('#nav');
 nav.classList = 'py-4 px-2 bg-green-500 flex items-center justify-around';
-// console.log(nav);
 
 // for (let i = 0; i < nav.children.length; i++) {
 //     const el = nav.children[i];
