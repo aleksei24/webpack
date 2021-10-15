@@ -6,11 +6,9 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const { webpack } = require('webpack');
 const Dotenv = require('dotenv-webpack');
 
-const mode = process.env.NODE_ENV || 'development';
+const mode = 'development';
 
 module.exports = {
-    // mode: 'production', // mode by default
-    // mode: 'development',
     mode: mode,
 
     entry: './src/index.js',
@@ -39,7 +37,9 @@ module.exports = {
             minimizerOptions: { plugins: ['imagemin-webp'] },
         }),
         new CleanWebpackPlugin(),
-        new Dotenv(),
+        new Dotenv({
+            path: './.env',
+        }),
     ],
 
     module: {
