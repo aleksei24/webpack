@@ -1,8 +1,3 @@
-import logVariables from './script/logVariables';
-
-console.log('ran from index.js');
-logVariables();
-
 // =============================================
 // webpack styles workthrough
 // import './default.scss';
