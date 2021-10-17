@@ -88,7 +88,7 @@ module.exports = {
     },
     // if you need it, just use
     // devtool: 'source-map', // for production
-    devtool: 'eval-cheap-source-map', // for development
+    devtool: 'eval-source-map', // for development
 
     devServer: {
         historyApiFallback: true,

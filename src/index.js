@@ -27,5 +27,6 @@ import './script/displayText';
 import './script/getData';
 import './script/today';
 import './script/formTest';
+import './script/myTimer';
 // import { obTwo, valsOfObj } from './testObjects';
 // import './testObjects';
