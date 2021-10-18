@@ -7,21 +7,14 @@
         <title><%= htmlWebpackPlugin.options.title %></title>
     </head>
     <body>
-        <div id="app" class="container mx-auto px-3">
+        <div id="app" class="container mx-auto px-3 flex flex-col items-center">
             <h1
                 id="main-headline"
                 class="text-center text-2xl sm:text-3xl md:text-5xl my-10 font-bold text-red-700"
             >
                 Quiz
             </h1>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 my-10">
-                <div class="border-2 border-black rounded-sm" id="putPic"></div>
-                <div
-                    class="border-2 border-black rounded-sm py-2 px-4 flex-auto h-full"
-                    id="displayData"
-                ></div>
-                <div class="border-2 border-black rounded-sm p-1" id="today"></div>
-            </div>
+            <div id="quiz"></div>
         </div>
     </body>
 </html>

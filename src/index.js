@@ -10,5 +10,5 @@ import 'tailwindcss/utilities.css';
 // =============================================
 // script
 // import './script/vibes';
-import './script/getData';
-import './script/today';
+// import './script/today';
+import './script/quiz';
