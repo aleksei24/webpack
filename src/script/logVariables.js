@@ -1,5 +1,5 @@
 function logVariables() {
-    console.log('variables are displayed in console');
+  console.log('variables are displayed in console');
 }
 
 export default logVariables;

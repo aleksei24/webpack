@@ -5,4 +5,4 @@ const formInputThird = document.querySelector('#my-input-03');
 const formBtn = document.querySelector('#form-btn');
 
 formBtn.classList =
-    'border-2 border-solid border-black rounded-md bg-red-700 text-gray-100 w-52 h-14 uppercase';
+  'border-2 border-solid border-black rounded-md bg-red-700 text-gray-100 w-52 h-14 uppercase';
