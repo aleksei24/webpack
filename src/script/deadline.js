@@ -1,4 +1,4 @@
-const myTimer = document.querySelector('#my-timer');
+const myTimer = document.querySelector('#deadline-block');
 const myDeadlineHeadline = document.querySelector('.giveaway');
 const myDeadline = document.querySelector('.deadline');
 const myDeadlineElems = document.querySelectorAll('.deadline-format h4');
@@ -24,7 +24,13 @@ const monthsArr = [
 ];
 const weekdaysArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-let futureDate = new Date(2022, 0, 17, 17, 34, 10);
+/*let tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();*/
+
+let futureDate = new Date(2022, 0, 17, 17, 34);
+// const futureDate = new Date(tempYear, tempMonth, tempDay + 22, 17, 34);
 const deadlineYear = futureDate.getFullYear();
 const deadlineMonth = futureDate.getMonth();
 const deadlineDay = futureDate.getDate();
@@ -36,6 +42,47 @@ myDeadlineHeadline.textContent = `The salary will be in my wallet at most on ${
   weekdaysArr[futureDate.getDay()]
 }, ${deadlineDay} ${
   monthsArr[deadlineMonth]
-} ${deadlineYear} at ${deadlineHours}:${deadlineMinutes}:${deadlineSeconds}`;
+} ${deadlineYear} at ${deadlineHours}:${deadlineMinutes}`;
 
-// console.log(deadlineWeekday);
+const futureTime = futureDate.getTime();
+// console.log(futureTime);
+
+function getRemainingTime() {
+  const today = new Date().getTime();
+  const temp = futureTime - today;
+  const oneDay = 24 * 60 * 60 * 1000;
+  const oneHour = 60 * 60 * 1000;
+  const oneMinute = 60 * 1000;
+  let days = Math.floor(temp / oneDay);
+  let hours = Math.floor((temp % oneDay) / oneHour);
+  let minutes = Math.floor((temp % oneHour) / oneMinute);
+  let seconds = Math.floor((temp % oneMinute) / 1000);
+
+  const values = [days, hours, minutes, seconds];
+
+  function format(item) {
+    if (item < 10) {
+      return (item = `0${item}`);
+    }
+    return item;
+  }
+
+  myDeadlineElems.forEach(function (item, index) {
+    item.innerHTML = format(values[index]);
+  });
+
+  if (temp < 0) {
+    clearInterval(countDown);
+    myDeadline.innerHTML = `<h4>Time is up</h4>`;
+  }
+}
+
+let countDown = setInterval(getRemainingTime, 1000);
+
+getRemainingTime();
+
+// ===========================
+// appearance
+const deadlineFormat = document.querySelectorAll('.deadline-format');
+
+// console.log(deadlineFormat);

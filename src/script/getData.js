@@ -5,7 +5,7 @@ const dataList = document.createElement('ul');
 fetch(currentUrl)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
+    // console.log(data);
     for (let i = 0; i < data.length; i++) {
       const elemId = data[i].id;
       const elemUserName = data[i].username;
