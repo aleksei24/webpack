@@ -10,7 +10,7 @@ fetch(currentUrl)
       const elemId = data[i].id;
       const elemUserName = data[i].username;
       dataList.innerHTML += `<li>${elemId}. ${elemUserName}</li>`;
-      dataList.classList = 'text-xl text-purple-400';
+      dataList.classList = 'text-base text-purple-400';
     }
 
     displayData.append(dataList);

@@ -23,7 +23,7 @@ myTimerContainer.classList = 'flex items-center justify-center';
 
 // ===========================================
 // logic
-const myDate = '29 Jan 2022 08:07:04';
+const myDate = '29 Jan 2022 18:09:20';
 
 myTimerHeadline.textContent = `Next salary will be at most on ${myDate}`;
 
@@ -40,12 +40,20 @@ function countdown() {
   myHours.innerHTML = formatTime(h);
   myMinutes.innerHTML = formatTime(m);
   mySeconds.innerHTML = formatTime(s);
+
+  if (totalSec < 0) {
+    clearInterval(timeLeft);
+    [myDays, myHours, myMinutes, mySeconds].forEach((el) => {
+      el.innerHTML = '0';
+    });
+    myTimerHeadline.textContent = `Time's up. Countdown ended on ${myDate}`;
+  }
 }
 
 function formatTime(time) {
   return time < 10 ? `0${time}` : time;
 }
 
-setInterval(countdown, 1000);
+let timeLeft = setInterval(countdown, 1000);
 
 // myTimer.classList = 'hidden';
