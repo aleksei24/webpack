@@ -9,7 +9,7 @@ const myMinutes = document.querySelector('#my-minutes');
 const mySeconds = document.querySelector('#my-seconds');
 
 // =================================
-myTimerHeadline.classList = 'text-center text-3xl font-bold mb-12';
+myTimerHeadline.classList = 'text-center text-2xl font-semibold mb-8';
 
 myTimerContainer.classList = 'flex items-center justify-center';
 
@@ -18,17 +18,17 @@ myTimerContainer.classList = 'flex items-center justify-center';
 );
 
 [myDays, myHours, myMinutes, mySeconds].forEach((el) => {
-  el.classList = 'text-2xl font-bold';
+  el.classList = 'text-xl font-semibold';
 });
 
 // ===========================================
 // logic
-const newYear = '3 Jan 2022 11:37:04';
+const myDate = '29 Jan 2022 08:07:04';
 
-myTimerHeadline.textContent = `Time until ${newYear}`;
+myTimerHeadline.textContent = `Next salary will be at most on ${myDate}`;
 
 function countdown() {
-  const newYearDate = new Date(newYear);
+  const newYearDate = new Date(myDate);
   const currentDate = new Date();
   const totalSec = (newYearDate - currentDate) / 1000;
   const d = Math.floor(totalSec / 3600 / 24);
@@ -47,3 +47,5 @@ function formatTime(time) {
 }
 
 setInterval(countdown, 1000);
+
+// myTimer.classList = 'hidden';

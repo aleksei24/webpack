@@ -29,7 +29,7 @@ let tempYear = tempDate.getFullYear();
 let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();*/
 
-let futureDate = new Date(2022, 0, 17, 17, 34);
+let futureDate = new Date(2022, 0, 29, 8, 7, 3);
 // const futureDate = new Date(tempYear, tempMonth, tempDay + 22, 17, 34);
 const deadlineYear = futureDate.getFullYear();
 const deadlineMonth = futureDate.getMonth();
@@ -38,7 +38,7 @@ const deadlineWeekday = futureDate.getDay();
 const deadlineHours = futureDate.getHours();
 const deadlineMinutes = futureDate.getMinutes();
 const deadlineSeconds = futureDate.getSeconds();
-myDeadlineHeadline.textContent = `The salary will be in my wallet at most on ${
+myDeadlineHeadline.textContent = `Next salary will be in my wallet at most on ${
   weekdaysArr[futureDate.getDay()]
 }, ${deadlineDay} ${
   monthsArr[deadlineMonth]
@@ -86,3 +86,5 @@ getRemainingTime();
 const deadlineFormat = document.querySelectorAll('.deadline-format');
 
 // console.log(deadlineFormat);
+
+myTimer.classList = 'hidden';
