@@ -23,9 +23,9 @@ myTimerContainer.classList = 'flex items-center justify-center';
 
 // ===========================================
 // logic
-const myDate = '29 Jan 2022 18:09:20';
+const myDate = '9 Feb 2022 09:09:20';
 
-myTimerHeadline.textContent = `Next salary will be at most on ${myDate}`;
+myTimerHeadline.textContent = `I will be free at most on ${myDate}`;
 
 function countdown() {
   const newYearDate = new Date(myDate);
