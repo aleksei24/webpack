@@ -23,7 +23,7 @@ myTimerContainer.classList = 'flex items-center justify-center';
 
 // ===========================================
 // logic
-const myDate = '9 Feb 2022 09:09:20';
+const myDate = '8 Aug 2022 09:15:00';
 
 myTimerHeadline.textContent = `I will be free at most on ${myDate}`;
 
