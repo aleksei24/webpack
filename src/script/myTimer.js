@@ -9,23 +9,11 @@ const myMinutes = document.querySelector('#my-minutes');
 const mySeconds = document.querySelector('#my-seconds');
 
 // =================================
-myTimerHeadline.classList = 'text-center text-2xl font-semibold mb-8';
 
-myTimerContainer.classList = 'flex items-center justify-center';
-
-[...myTimerElems].map(
-  (el) => (el.classList = 'border-black border-solid border-2 p-1 text-center mx-1')
-);
-
-[myDays, myHours, myMinutes, mySeconds].forEach((el) => {
-  el.classList = 'text-xl font-semibold';
-});
-
-// ===========================================
 // logic
 const myDate = '8 Aug 2022 09:15:00';
 
-myTimerHeadline.textContent = `I will be free at most on ${myDate}`;
+myTimerHeadline.textContent = `My holiday will be on ${myDate}`;
 
 function countdown() {
   const newYearDate = new Date(myDate);

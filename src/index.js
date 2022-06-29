@@ -23,8 +23,6 @@ import './styles/view.scss';
 import './script/vibes';
 import './script/displayText';
 import './script/getData';
-import './script/today';
-import './script/formTest';
 import './script/myTimer';
 import './script/deadline';
 // import { obTwo, valsOfObj } from './testObjects';
