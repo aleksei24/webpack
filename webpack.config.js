@@ -28,11 +28,7 @@ module.exports = {
       template: path.resolve(__dirname, './src/template.html'), // template file
       filename: 'index.html', // output file
     }),
-    /*new ImageMinimizerPlugin({
-            minimizerOptions: {
-                plugins: ['jpegtran'],
-            },
-        }),*/
+
     new ImageMinimizerPlugin({
       deleteOriginalAssets: false,
       filename: '[path][name].webp',
