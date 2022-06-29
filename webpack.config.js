@@ -30,9 +30,12 @@ module.exports = {
     }),
 
     new ImageMinimizerPlugin({
-      deleteOriginalAssets: false,
-      filename: '[path][name].webp',
-      minimizerOptions: { plugins: ['imagemin-webp'] },
+      minimizer: {
+        implementation: ImageMinimizerPlugin.imageminMinify,
+        options: {
+          plugins: ['imagemin-webp'],
+        },
+      },
     }),
     new CleanWebpackPlugin(),
     new Dotenv(),
