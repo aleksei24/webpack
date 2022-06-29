@@ -1,0 +1,17 @@
+.app-container {
+  margin: 0 auto;
+  padding: 3em 0;
+  &__headline {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2em 0;
+    font-weight: 700;
+    color: rgb(255, 70, 70);
+    @media (min-width: 40em) {
+      font-size: 1.875rem;
+    }
+    @media (min-width: 48em) {
+      font-size: 3rem;
+    }
+  }
+}

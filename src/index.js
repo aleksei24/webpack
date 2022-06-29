@@ -13,12 +13,10 @@ putPic.append(myImg1);
 
 // =============================================
 // webpack styles workthrough
-// import './default.scss';
-// import './styles/fonts.scss';
-// import './test.css';
-import 'tailwindcss/base.css';
-import 'tailwindcss/components.css';
-import 'tailwindcss/utilities.css';
+// import './styles/mixins.scss';
+import './styles/fonts.scss';
+import './styles/default.scss';
+import './styles/view.scss';
 
 // =============================================
 // script
