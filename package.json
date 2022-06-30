@@ -9,7 +9,7 @@
     "watch": "webpack --watch",
     "dev": "cross-env NODE_ENV=development webpack serve"
   },
-  "browserslist": "> 0.25%, not dead",
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aleksei24/webpack.git"
