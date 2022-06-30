@@ -72,6 +72,10 @@
     border-radius: 0.7em;
     padding: 0.5em;
     text-align: center;
+    & > p {
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
   }
 }
 
