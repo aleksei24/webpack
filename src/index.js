@@ -24,6 +24,5 @@ import './script/vibes';
 import './script/displayText';
 import './script/getData';
 import './script/myTimer';
-import './script/deadline';
 // import { obTwo, valsOfObj } from './testObjects';
 // import './testObjects';
