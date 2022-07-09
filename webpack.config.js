@@ -90,7 +90,7 @@ module.exports = {
 
   // if you need it, just use
   // devtool: 'source-map', // for production
-  devtool: 'eval-source-map', // for development
+  devtool: 'inline-source-map', // for development
 
   devServer: {
     historyApiFallback: true,
