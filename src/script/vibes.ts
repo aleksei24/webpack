@@ -1,4 +1,4 @@
-const vibes = [
+export const vibes = [
   'Your pain today will be your strength tomorrow',
   'One thing at a time',
   'We are what we repeatedly do',
@@ -18,8 +18,8 @@ const vibes = [
   'Where there’s a will, there’s a way',
 ];
 
-const randomPhrase = vibes[Math.floor(Math.random() * Math.floor(vibes.length))];
+export const randomPhrase = vibes[Math.floor(Math.random() * Math.floor(vibes.length))];
 
-const headline = document.querySelector('#main-headline');
-const headlineContent = randomPhrase;
+export const headline = document.querySelector('#main-headline');
+export const headlineContent = randomPhrase;
 // headline.textContent = headlineContent;

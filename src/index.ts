@@ -9,7 +9,8 @@ import './styles/view.scss';
 
 // =============================================
 // script
-import './script/vibes';
+// import './script/vibes';
+import './script/attempt';
 // import './script/displayText';
 // import './script/getData';
 // import './script/myTimer';

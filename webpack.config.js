@@ -13,12 +13,7 @@ module.exports = {
   // mode: 'development',
   mode: mode,
 
-  entry: './src/index.js',
-
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
+  entry: './src/index.ts',
 
   plugins: [
     new MiniCssExtractPlugin(),
@@ -44,7 +39,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/i,
+        test: /\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
       {
@@ -82,6 +78,16 @@ module.exports = {
       },
     ],
   },
+
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+
   // if you need it, just use
   // devtool: 'source-map', // for production
   devtool: 'eval-source-map', // for development
