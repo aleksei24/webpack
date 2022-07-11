@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/aleksei24/webpack#readme",
   "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
     "autoprefixer": "^10.4.7",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
