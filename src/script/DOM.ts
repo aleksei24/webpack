@@ -3,5 +3,6 @@ headline.innerText = 'Hello';
 console.log(headline);
 
 headline.addEventListener('click', (e) => {
-  console.log('event', e);
+  const target = e.target as HTMLElement
+  console.log('event', target.className);
 })
