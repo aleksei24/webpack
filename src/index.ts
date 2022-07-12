@@ -10,3 +10,4 @@ import './styles/view.scss';
 import './script/exOne';
 import './script/type_definition';
 import './script/functions';
+import './script/interfaces';
