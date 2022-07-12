@@ -11,3 +11,5 @@ import './script/exOne';
 import './script/type_definition';
 import './script/functions';
 import './script/interfaces';
+import './script/unionAndType';
+import './script/any';
