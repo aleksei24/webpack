@@ -13,3 +13,4 @@ import './script/functions';
 import './script/interfaces';
 import './script/unionAndType';
 import './script/any';
+import './script/DOM';

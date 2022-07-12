@@ -2,7 +2,7 @@ type ID = string;
 type PopTag = string;
 type KindOfPopTag = PopTag | null;
 
-interface UserInterface {
+interface User {
   id: ID,
   name: string,
   surname: string;
