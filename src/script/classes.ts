@@ -37,7 +37,9 @@ console.log(myBike.showCityToTravel());
 console.log(Bike.showNumberItsBeenMended());
 
 class Scooter extends Bike {
-  // private wheelDiameter: number;
+  private speed: number = 55;
+  // private property should have a value
+
   readonly cityToRide: string = 'No city';
   constructor(model: string, year: number, city?: string, wheelsDiameter?: number) {
     super(model, year, city);
@@ -50,7 +52,12 @@ class Scooter extends Bike {
   showWheelsDiameter(num: number): string {
     return `Diameter of scooter wheels: ${num}cm.`;
   }
+
+  showScooterSpees(): string {
+    return `Speed of scooter: ${this.speed}km/h.`;
+  }
 }
 
 const selfRide = new Scooter('Whoosh', 2020, '');
 console.log(selfRide.showWheelsDiameter(15));
+console.log(selfRide.showScooterSpees());
