@@ -5,23 +5,21 @@ interface BikeInterface {
 class Bike implements BikeInterface {
   model: string;
   year: number;
-  wheelsDiameter?: number;
   readonly cityToRide: string = 'Petersburg';
   // readonly property should have a value
   static beenFixed = 3;
-  static showNumberItsBeenMended(): number {
-    return Bike.beenFixed;
+  static showNumberItsBeenMended(): string {
+    return `Bike's been mended ${Bike.beenFixed} times.`;
     // console.log(Bike.beenFixed);
   }
 
   // there should be a constructor
-  constructor(model: string, year: number, city?: string, wheelsDiameter?: number) {
+  constructor(model: string, year: number, city?: string) {
     if (city !== undefined) {
       this.cityToRide = city;
     }
     this.model = model,
-      this.year = year,
-      this.wheelsDiameter = wheelsDiameter;
+      this.year = year;
   }
 
   showCityToTravel(): string {
@@ -37,3 +35,18 @@ const myBike = new Bike('Lorak', 2012);
 console.log(myBike.riding());
 console.log(myBike.showCityToTravel());
 console.log(Bike.showNumberItsBeenMended());
+
+class Scooter extends Bike {
+  wheelDiameter: number = 15;
+  constructor(model: string, year: number, city?: string, wheelsDiameter?: number) {
+    super(model, year, city)
+  }
+
+
+  showWheelsDiameter(): string {
+    return `Diameter of scooter wheels: ${this.wheelDiameter}cm.`;
+  }
+}
+
+const selfRide = new Scooter('Whoosh', 2020, '', 15);
+console.log(selfRide.showWheelsDiameter());
