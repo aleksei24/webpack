@@ -37,7 +37,7 @@ console.log(myBike.showCityToTravel());
 console.log(Bike.showNumberItsBeenMended());
 
 class Scooter extends Bike {
-  wheelDiameter: number = 15;
+  // private wheelDiameter: number;
   readonly cityToRide: string = 'No city';
   constructor(model: string, year: number, city?: string, wheelsDiameter?: number) {
     super(model, year, city);
@@ -47,10 +47,10 @@ class Scooter extends Bike {
     }
   }
 
-  showWheelsDiameter(): string {
-    return `Diameter of scooter wheels: ${this.wheelDiameter}cm.`;
+  showWheelsDiameter(num: number): string {
+    return `Diameter of scooter wheels: ${num}cm.`;
   }
 }
 
-const selfRide = new Scooter('Whoosh', 2020, '', 15);
-console.log(selfRide.showWheelsDiameter());
+const selfRide = new Scooter('Whoosh', 2020, '');
+console.log(selfRide.showWheelsDiameter(15));
