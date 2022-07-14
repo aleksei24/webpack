@@ -38,10 +38,14 @@ console.log(Bike.showNumberItsBeenMended());
 
 class Scooter extends Bike {
   wheelDiameter: number = 15;
+  readonly cityToRide: string = 'No city';
   constructor(model: string, year: number, city?: string, wheelsDiameter?: number) {
-    super(model, year, city)
-  }
+    super(model, year, city);
 
+    if (city !== undefined) {
+      this.cityToRide = city;
+    }
+  }
 
   showWheelsDiameter(): string {
     return `Diameter of scooter wheels: ${this.wheelDiameter}cm.`;
