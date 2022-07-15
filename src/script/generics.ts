@@ -1,4 +1,4 @@
-function addId(obj) {
+function addId<T>(obj: <T>) {
   const id = Math.random().toString(16);
   return {
     ...obj, id
