@@ -15,3 +15,4 @@ import './script/unionAndType';
 import './script/any';
 import './script/DOM';
 import './script/classes';
+import './script/generics';
