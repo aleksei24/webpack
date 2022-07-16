@@ -1,15 +1,15 @@
-interface BikeInterface {
+interface TwoWheelsVehicleInterface {
   showCityToTravel(): string;
 }
 
-class Bike implements BikeInterface {
+class TwoWheelsVehicle implements TwoWheelsVehicleInterface {
   model: string;
   year: number;
   readonly cityToRide: string = 'Petersburg';
   // readonly property should have a value
   static beenFixed = 3;
   static showNumberItsBeenMended(): string {
-    return `Bike's been mended ${Bike.beenFixed} times.`;
+    return `The vehicle's been mended ${TwoWheelsVehicle.beenFixed} times.`;
     // console.log(Bike.beenFixed);
   }
 
@@ -23,7 +23,7 @@ class Bike implements BikeInterface {
   }
 
   showCityToTravel(): string {
-    return `${this.cityToRide} is the city I travelled to with my bike.`;
+    return `${this.cityToRide} is the city I travelled to with the vehicle.`;
   }
 
   riding(): string {
@@ -31,12 +31,12 @@ class Bike implements BikeInterface {
   }
 };
 
-const myBike = new Bike('Lorak', 2012);
+const myBike = new TwoWheelsVehicle('Lorak', 2012);
 console.log(myBike.riding());
 console.log(myBike.showCityToTravel());
-console.log(Bike.showNumberItsBeenMended());
+console.log(TwoWheelsVehicle.showNumberItsBeenMended());
 
-class Scooter extends Bike {
+class Scooter extends TwoWheelsVehicle {
   private speed: number = 55;
   // private property should have a value
 
