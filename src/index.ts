@@ -16,3 +16,5 @@ import './script/any';
 import './script/DOM';
 import './script/classes';
 import './script/generics';
+// import './script/usingInstanceof';
+// import './script/usingTypeof';
