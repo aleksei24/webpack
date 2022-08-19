@@ -1,12 +1,3 @@
-const headline = document.querySelector('#main-headline') as HTMLInputElement;
-headline.innerText = 'Hello';
-console.log(headline);
-
-headline.addEventListener('click', (e) => {
-  const target = e.target as HTMLElement
-  console.log('event', target.className);
-})
-
 const dictum: string[] = [
   'Your pain today will be your strength tomorrow',
   'One thing at a time',
@@ -26,4 +17,14 @@ const dictum: string[] = [
   'When in Rome, do as the Romans do',
   'Where there’s a will, there’s a way',
 ];
+
+const headline = document.querySelector('#main-headline') as HTMLInputElement;
+const randomPhrase = dictum[Math.floor(Math.random() * Math.floor(dictum.length))];
+const content = randomPhrase;
+headline.innerText = content;
+
+headline.addEventListener('click', (e) => {
+  const target = e.target as HTMLElement
+  console.log('event: ', target.id);
+})
 
