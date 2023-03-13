@@ -7,7 +7,6 @@ import './styles/view.scss';
 
 // =============================================
 // script
-import './script/exOne';
 import './script/type_definition';
 import './script/functions';
 import './script/interfaces';

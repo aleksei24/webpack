@@ -1,6 +1,6 @@
 .likeAnApp {
   margin: 0 auto;
-  padding: 3em 0;
+  padding: 3em 1em;
   &__headline {
     text-align: center;
     font-size: 2rem;
@@ -14,11 +14,7 @@
       font-size: 3rem;
     }
   }
-  &__text {
-    text-align: center;
-    font-size: 1.25rem;
-    color: rgb(3, 133, 3);
-  }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
@@ -61,24 +57,4 @@
     height: 2.5em;
     text-transform: uppercase;
   }
-}
-
-.my-timer {
-  display: grid;
-  gap: 0.75em;
-  grid-template-columns: repeat(auto-fit, minmax(4em, 1fr));
-  & > div {
-    border: 1px solid purple;
-    border-radius: 0.7em;
-    padding: 0.5em;
-    text-align: center;
-    & > p {
-      font-size: 1.5rem;
-      font-weight: 900;
-    }
-  }
-}
-
-#my-timer-headline {
-  margin-bottom: 2em;
 }
