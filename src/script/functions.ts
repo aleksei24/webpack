@@ -9,6 +9,14 @@ function rootNum(num: number) {
 const resOne = getFullName('Joe', 'Pete');
 const resTwo = rootNum(23)
 
+function log(a?: string, b?: number) {
+  if (b) {
+    console.log(b)
+  }
+  console.log(a);
+}
 
-console.log(resOne);
-console.log(resTwo);
+log(resOne, resTwo)
+
+const myLogOut = document.querySelector('#log') as HTMLObjectElement;
+myLogOut.innerText = `Log_1: ${resOne}, Log_2: ${resTwo.toString()}`;
