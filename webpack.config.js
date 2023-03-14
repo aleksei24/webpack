@@ -68,14 +68,26 @@ module.exports = {
       },
       // Images
       {
-        test: /\.(png|jpg|jpeg|webp)$/i,
-        type: 'asset/resource',
+        test: /\.(png|jpe?g|webp)$/i,
+        type: 'asset',
       },
       // Fonts and SVGs
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset/resource',
       },
+    ],
+  },
+
+  optimization: {
+    minimizer: [
+      '...',
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.squooshMinify,
+          options: {},
+        },
+      }),
     ],
   },
 
