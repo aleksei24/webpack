@@ -8,7 +8,11 @@ function createPassenger(psg: Passenger) {
     return `Name: ${psg.name}, Age: ${psg.age}, Commute today: ${psg.commuteDaily}.`
 }
 
-const passOne = createPassenger({ name: 'Sue', age: 29, commuteDaily: true })
+const pName: string = 'Sue'
+const pAge: number = 29
+const pCommute: boolean = true
+
+const passOne = createPassenger({ name: pName, age: pAge, commuteDaily: pCommute })
 
 const myLogOutThree = document.querySelector('#log_three') as HTMLObjectElement;
 myLogOutThree.innerText = `${passOne}`;
