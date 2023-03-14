@@ -7,7 +7,7 @@ import './styles/view.scss';
 
 // =============================================
 // script
-import './script/type_definition';
+import './script/type_aliases';
 import './script/functions';
 import './script/interfaces';
 import './script/unionAndType';
