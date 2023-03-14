@@ -18,5 +18,5 @@ function log(a?: string, b?: number) {
 
 log(resOne, resTwo)
 
-const myLogOut = document.querySelector('#log') as HTMLObjectElement;
-myLogOut.innerText = `Log_1: ${resOne}, Log_2: ${resTwo}`;
+const myLogOutOne = document.querySelector('#log_one') as HTMLObjectElement;
+myLogOutOne.innerText = `Log_1: ${resOne}, Log_2: ${resTwo}`;
