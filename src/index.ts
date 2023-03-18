@@ -17,5 +17,6 @@ import './script/classes';
 import './script/generics';
 import './script/objects';
 import './script/readOnly';
+import './script/arrays';
 // import './script/usingInstanceof';
 // import './script/usingTypeof';

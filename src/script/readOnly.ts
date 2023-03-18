@@ -12,5 +12,5 @@ let boots: Shoes = {
   isAvailable: true
 }
 
-const myLogOutFour = document.querySelector('#log_four') as HTMLObjectElement;
-myLogOutFour.innerText = `${boots.isAvailable = false}`;
+// const myLogOutFour = document.querySelector('#log_four') as HTMLObjectElement;
+// myLogOutFour.innerText = `${boots.isAvailable = false}`;
