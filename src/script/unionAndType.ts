@@ -20,8 +20,13 @@ const arr_1: number[] = [1, 4, 7, 9]
 const arr_2: string[] = ['1', 'm', 'h', '9']
 const arr_3: (string | number)[] = [1, 's', 7, 'r']
 
+let givenProducts: 'eggs' | 'milk' | 'cheese';
+givenProducts = 'eggs' // good
+// givenProducts='water' // not good
+
 const myLogOutFive = document.querySelector('#log_five') as HTMLObjectElement;
 myLogOutFive.innerText = `Nick's alias - ${nick.alias = 'Wooes'}, Ben's surname - ${ben.surname}.`;
 
 const showMixedArr = document.querySelector('#log_six') as HTMLObjectElement;
 showMixedArr.innerText = `Mixed Array: ${arr_3}.`;
+
