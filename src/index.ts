@@ -18,5 +18,6 @@ import './script/generics';
 import './script/objects';
 import './script/readOnly';
 import './script/arrays';
+import './script/tuple';
 // import './script/usingInstanceof';
 // import './script/usingTypeof';
