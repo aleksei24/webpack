@@ -19,5 +19,6 @@ import './script/objects';
 import './script/readOnly';
 import './script/arrays';
 import './script/tuple';
+import './script/enums';
 // import './script/usingInstanceof';
 // import './script/usingTypeof';
