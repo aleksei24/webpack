@@ -32,9 +32,14 @@ class TwoWheelsVehicle implements TwoWheelsVehicleInterface {
 };
 
 const myBike = new TwoWheelsVehicle('Lorak', 2012);
-console.log(myBike.riding());
-console.log(myBike.showCityToTravel());
 console.log(TwoWheelsVehicle.showNumberItsBeenMended());
+
+const myLogOutNine = document.querySelector('#log_nine') as HTMLObjectElement;
+myLogOutNine.innerText = `Class My Bike: 
+  ${myBike.riding()};
+  ${myBike.showCityToTravel()};
+`;
+
 
 class Scooter extends TwoWheelsVehicle {
   private speed: number = 55;
@@ -59,5 +64,9 @@ class Scooter extends TwoWheelsVehicle {
 }
 
 const selfRide = new Scooter('Whoosh', 2020, '');
-console.log(selfRide.showWheelsDiameter(15));
-console.log(selfRide.showScooterSpees());
+
+const myLogOutTen = document.querySelector('#log_ten') as HTMLObjectElement;
+myLogOutTen.innerText = `Class Scooter: 
+  ${selfRide.showWheelsDiameter(15)};
+  ${selfRide.showScooterSpees()};
+`;
