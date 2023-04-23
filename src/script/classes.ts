@@ -73,3 +73,29 @@ myLogOutTen.innerText = `Class Scooter:
   ${selfRide.showWheelsDiameter(15)};
   ${selfRide.showScooterSpees()};
 `;
+
+class MotorBike extends TwoWheelsVehicle {
+  private engine: number = 250
+  constructor(
+    public model: string,
+    public year: number,
+  ) {
+    super(model, year)
+  }
+
+  // getter
+  get getModel(): string {
+    return 'Model: ' + this.model
+  }
+
+  // setter
+  set setEngine(value: number) {
+    let num = value
+    this.engine = num
+  }
+}
+
+const trata = new MotorBike('Ant', 1999)
+
+const myLogOutEleven = document.querySelector('#log_eleven') as HTMLObjectElement;
+myLogOutEleven.innerText = `Getter motorbike: ${trata.getModel}`
