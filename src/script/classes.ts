@@ -42,11 +42,14 @@ myLogOutNine.innerText = `Class My Bike:
 
 
 class Scooter extends TwoWheelsVehicle {
-  private speed: number = 55;
-  // private property should have a value
-
   readonly cityToRide: string = 'No city';
-  constructor(model: string, year: number, city?: string, wheelsDiameter?: number) {
+  constructor(
+    public model: string,
+    public year: number,
+    public city?: string,
+    private speed: number = 55,
+    // private property should have a value
+    public wheelsDiameter?: number) {
     super(model, year, city);
 
     if (city !== undefined) {
