@@ -7,7 +7,7 @@ import './styles/view.scss';
 
 // =============================================
 // script
-import './script/type_aliases';
+import './script/typeAliases';
 import './script/functions';
 import './script/interfaces';
 import './script/unionAndType';
@@ -20,5 +20,6 @@ import './script/readOnly';
 import './script/arrays';
 import './script/tuple';
 import './script/enums';
+import './script/abstractClass';
 // import './script/usingInstanceof';
 // import './script/usingTypeof';
