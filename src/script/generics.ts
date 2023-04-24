@@ -1,19 +1,9 @@
-function addId<T extends object>(obj: T) {
-  const id = Math.random().toString(16);
-  return {
-    ...obj, id
-  }
-}
+const price: Array<number> = [34, 6.89, 10.49]
+const products: Array<string> = ['bread', 'milk', 'millet']
 
-interface UserGenericsInterface {
-  name: string,
+function showArr(value: number | string): number | string {
+  return value
 }
-
-const jack: UserGenericsInterface = {
-  name: 'Jack'
-}
-
-const resultGenerics = addId<UserGenericsInterface>(jack);
 
 const myLogOutThirteen = document.querySelector('#log_thirteen') as HTMLObjectElement
-myLogOutThirteen.innerText = `Waiting a second`
+myLogOutThirteen.innerText = `Waiting a second: ${showArr(price[1])}`
