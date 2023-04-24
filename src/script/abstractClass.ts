@@ -4,7 +4,7 @@ abstract class Furniture {
     public category: string
   ) { }
 
-
+  abstract getPlace(): string
 }
 
 // impossible to create an instance of an abstract class with new
@@ -21,6 +21,12 @@ class Chair extends Furniture {
     super(material, category)
   }
 
+  getPlace(): string {
+    return 'Chair is on the floor'
+  }
 }
 
 const stool = new Chair('oak', 'stool', false)
+
+const myLogOutTwelve = document.querySelector('#log_twelve') as HTMLObjectElement
+myLogOutTwelve.innerText = `${stool.getPlace()}`
