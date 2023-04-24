@@ -15,4 +15,5 @@ const jack: UserGenericsInterface = {
 
 const resultGenerics = addId<UserGenericsInterface>(jack);
 
-console.log('Generics result: ', resultGenerics);
+const myLogOutThirteen = document.querySelector('#log_thirteen') as HTMLObjectElement
+myLogOutThirteen.innerText = `Waiting a second`
