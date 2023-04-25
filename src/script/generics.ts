@@ -1,7 +1,7 @@
 const price: Array<number> = [34, 6.89, 10.49]
-const products: Array<string> = ['bread', 'milk', 'millet']
+const products: Array<string> = ['milk', 'millet', 'bread']
 
-function showArr<T>(value: T): T {
+function showArr<T>(value: T[]): T[] {
   return value
 }
 
@@ -17,3 +17,6 @@ function showArrTwo<Shooping>(v: Shooping): Shooping {
 
 const myLogOutThirteen = document.querySelector('#log_thirteen') as HTMLObjectElement
 myLogOutThirteen.innerText = `Price array: ${showArrTwo(price)}`
+
+const myLogOutFourteen = document.querySelector('#log_fourteen') as HTMLObjectElement
+myLogOutFourteen.innerText = `Products array: ${showArr(products.sort())}`
