@@ -14,12 +14,13 @@ import './script/unionAndType';
 import './script/any';
 import './script/DOM';
 import './script/classes';
-import './script/generics';
+import './script/generics'
 import './script/objects';
 import './script/readOnly';
 import './script/arrays';
 import './script/tuple';
 import './script/enums';
 import './script/abstractClass';
+import './script/narrowing'
 // import './script/usingInstanceof';
 // import './script/usingTypeof';
